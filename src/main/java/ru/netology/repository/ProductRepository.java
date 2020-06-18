@@ -9,8 +9,7 @@ public class ProductRepository {
         int length = items.length + 1;
         Product[] tmp = new Product[length];
         System.arraycopy(items, 0, tmp, 0, items.length);
-        int lastIndex = tmp.length - 1; //
-        tmp[lastIndex] = item; //
+        tmp[tmp.length - 1] = item;
         items = tmp; //
     }
 
@@ -18,12 +17,12 @@ public class ProductRepository {
         return items;
     }
 
-    public Product findById(int id) {
-        for (Product item : items) {
-            if (item.getId() == id) {
-                return item;
-            }
-        }
-        return null;
-    }
+//    public Product findById(int id) {
+//        for (Product item : items) {
+//            if (item.getId() == id) {
+//                return item;
+//            }
+//        }
+//        return null;
+//    }
 }
