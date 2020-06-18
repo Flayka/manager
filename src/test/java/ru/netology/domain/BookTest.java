@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
-
     Book book = new Book(2, "Moydodyr", 60, "Chuykovskiy");
 
     @Test

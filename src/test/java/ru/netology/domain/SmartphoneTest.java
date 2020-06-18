@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SmartphoneTest {
-
     Smartphone smartphone = new Smartphone(6, "Q10", 15000, "Huawey");
 
     @Test
@@ -33,5 +32,4 @@ class SmartphoneTest {
         String search = "Sumsung";
         assertFalse(smartphone.matches(search));
     }
-
 }
