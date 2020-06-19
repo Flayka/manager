@@ -31,7 +31,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByName() {
+    public void shouldsearchByName() {
 
         String search = "11pro";
 
@@ -42,7 +42,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByAuthor() {
+    public void shouldsearchByAuthor() {
 
         String search = "ChuykovskiyK";
 
@@ -53,7 +53,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByManufacturer() {
+    public void shouldsearchByManufacturer() {
 
         String search = "Sony";
 
@@ -64,7 +64,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchBySameAuthor() {
+    public void shouldsearchBySameAuthor() {
 
         String search = "Chuykovskiy";
 
@@ -75,7 +75,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchBySameName() {
+    public void shouldsearchBySameName() {
 
         String search = "Phone";
 
@@ -86,7 +86,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByNoMatches() {
+    public void shouldsearchByNoMatches() {
 
         String search = "Test";
 
