@@ -31,7 +31,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByName() {
+    public void shouldsearchByName() {
         String search = "11pro";
 
         Product[] actual = manager.searchBy(search);
@@ -41,7 +41,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByAuthor() {
+    public void shouldsearchByAuthor() {
         String search = "ChuykovskiyK";
 
         Product[] actual = manager.searchBy(search);
@@ -51,7 +51,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByManufacturer() {
+    public void shouldsearchByManufacturer() {
         String search = "Sony";
 
         Product[] actual = manager.searchBy(search);
@@ -61,7 +61,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchBySameAuthor() {
+    public void shouldsearchBySameAuthor() {
         String search = "Chuykovskiy";
 
         Product[] actual = manager.searchBy(search);
@@ -71,7 +71,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchBySameName() {
+    public void shouldsearchBySameName() {
         String search = "Phone";
 
         Product[] actual = manager.searchBy(search);
@@ -81,7 +81,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void ShouldsearchByNoMatches() {
+    public void shouldsearchByNoMatches() {
         String search = "Test";
 
         Product[] actual = manager.searchBy(search);

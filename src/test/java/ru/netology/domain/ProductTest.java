@@ -10,14 +10,12 @@ class ProductTest {
     @Test
     public void shouldSearchProduct() {
         String search = "Sumsung";
-        product.matches(search);
         assertTrue(product.matches(search));
     }
 
     @Test
     public void shouldNotSearchProduct() {
         String search = "Vertu";
-        product.matches(search);
         assertFalse(product.matches(search));
     }
 }

@@ -10,14 +10,12 @@ class SmartphoneTest {
     @Test
     public void shouldSearchSmartphoneByName() {
         String search = "Q10";
-        smartphone.matches(search);
         assertTrue(smartphone.matches(search));
     }
 
     @Test
     public void shouldNotSearchSmartphoneByName() {
         String search = "Galaxy";
-        smartphone.matches(search);
         assertFalse(smartphone.matches(search));
     }
 

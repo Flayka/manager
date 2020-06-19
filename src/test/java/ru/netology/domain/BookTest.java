@@ -10,14 +10,12 @@ class BookTest {
     @Test
     public void shouldSearchBookByName() {
         String search = "Moydodyr";
-        book.matches(search);
         assertTrue(book.matches(search));
     }
 
     @Test
     public void shouldNotSearchBookByName() {
         String search = "Tarakanische";
-        book.matches(search);
         assertFalse(book.matches(search));
     }
 
