@@ -3,7 +3,11 @@
 
 name: Java CI with Maven
 
-on: [push]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,4 +21,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B -e verify
+      run: mvn -B package --file pom.xml
